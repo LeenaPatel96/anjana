@@ -1,0 +1,494 @@
+body{
+  color:white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+/* navbar css start====================================
+===================================================== */
+
+.nav-item a:hover {
+  border-bottom:1px solid white;
+}
+
+.back-color-for-nav{
+  background-color: black;
+}
+.nav-link{
+  color:white !important;
+}
+.nav-item{
+  padding:5px;
+}
+.dropdown-menu{
+  background-color: #000000!important;
+}
+.dropdown-item{
+  color:white !important;
+}
+.dropdown-menu > a:hover {
+    color: #0570a4 !important;
+}
+.dropdown-item:active {
+  background-color:white!important;
+}
+.navbar-toggler{
+  background-color: #0570a4 !important;
+  height: 33px;
+  width:45px;
+  padding: 3px;
+}
+.fa-home{
+  padding-right: 25px!important;
+}
+.fa-th{
+  padding-right: 5px!important;
+}
+.fa-users{
+  padding-right: 8px!important;
+}
+.fa-envelope{
+  padding-right: 25px!important;
+}
+.logo-text{
+  margin-left:-10%;
+  font-size: 19px;
+}
+.logo-img{
+  height:70px;
+  width:70px;
+}
+/* navbar css end =============================================
+==============================================================*/
+
+/* particals background css start==========================
+============================================================= */
+#particle {
+  background-color: #000000;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0; 
+}
+#overlay {
+  position: relative;
+}
+
+/* particals background css end=========================================
+======================================================================= */
+
+/* carousel css start===================================================
+======================================================================== */
+.carousel-inner{
+  width: 90% !important;
+  margin-left: 5%;
+  margin-top: 2% !important;
+}
+.carousel-caption{
+  font-size: 30px;
+}
+.carousel-caption h5{
+  font-size: 35px;
+}
+/* crousel css end ====================================================
+======================================================================*/
+
+/* footer css start====================================================
+====================================================================== */
+.map{
+  height: 100%;
+  width: 100%;
+}
+.back-color-for-footer{
+  background: #0570a4 !important;
+  color:white;
+  margin-left: 0px!important;
+  margin-top: 3%;
+}
+.map-discription{
+  text-align: center;
+}
+/* footer css end==============================================
+================================================================= */
+
+/* product detalis banner section start=======================
+=========================================================== */
+.banner{
+height: 300px;
+width: 100%;
+}
+.banner-img{
+  height:100%;
+  width: 100%;
+  margin-top: 1%;
+}
+/* product detalis banner section end ==========================
+==============================================================*/
+
+/* product detalis img carousel amd discription start=========
+============================================================== */
+#slidy-container { 
+  width: 100%; 
+  height: 80%;
+  overflow: hidden; 
+  margin-top: 8%;
+  border: 3px solid #0570a4;
+  border-radius: 10px;
+}
+.product-dis{
+  color: white;
+  padding-top: 13%;
+  font-size: 22px;
+  padding-left: 5%;
+}
+
+.img-dis{
+  padding-right: 0px!important;
+}
+
+.know-more-btn{
+  border: 3px solid white;
+  padding: 3px;
+  border-radius: 4px;
+  background-color:#0570a4;
+  color: white!important;
+}
+
+/* product details img carousel and discription end===========
+============================================================== */
+
+/* about us section css start ===================================
+=================================================================*/
+
+.product-img-and-disss{
+  margin-top:5%;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.three-box{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px  !important;
+}
+.container .card {
+  position: relative;
+  height: 300px;
+  color: #fff;
+  background: #111;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 20px 30px;
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  transform: translateY(-20px);
+}
+
+.container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0570a4;
+  background-image: linear-gradient(43deg, #fff 0%, #0570a4 46%, #fff 100%);
+}
+
+.container .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0570a4;
+  filter: blur(30px);
+}
+
+.container .card:nth-child(2)::after,
+.container .card:nth-child(2)::before {
+  background-color: #FAD961;
+}
+.container .card:nth-child(3)::after,
+.container .card:nth-child(3)::before {
+  background-color: #FA8BFF;
+}
+
+.container .card span {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #000;
+  z-index: 2;
+  opacity: .6;
+}
+.container .card .card-body {
+  flex-grow: 1;
+  position: relative;
+  z-index: 10;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.container .card .card-body h2 {
+  font-size: 28px;
+  margin-top: 0;
+}
+.container .card .card-body p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.container .card .card-body a {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+  margin-top: auto;
+  background: #fff;
+  background-image: linear-gradient(35deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+/* about us section end =========================================
+=================================================================*/
+
+/* contact us info css start ======================================
+==================================================================*/
+
+.contact-uss{
+  text-align: center;
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+  margin-top: 5%;
+  background-color: black;
+  padding: 4%;
+}
+.fa-3x{
+  color: #0570a4;
+}
+
+.heading-of-product{
+  text-align: center;
+  color:white;
+  text-decoration: underline;
+}
+
+/* contact us info css end ==================================
+=============================================================*/
+
+.copyright{
+  color:white;
+  text-align: center;
+}
+/* media querry start=======
+============================ */
+
+@media only screen and (min-width: 992px) {
+  .logo-text{
+    margin-left:0%
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .logo-text{
+    display: none;
+  }
+  .navbar-brand{
+    margin-left: 35%;
+  }
+  .container .card .card-body p {
+    font-size: 10px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 250px;
+  }
+  .product-dis{
+    color: white;
+    padding-top: 0%;
+    font-size: 10px;
+    padding-left: 10%;
+  }
+  .carousel-caption{
+    font-size: 11px;
+  }
+  .carousel-caption h5{
+    font-size: 14px;
+  }
+  .heading-of-product h2{
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .logo-img{
+    height:45px;
+    width:45px;
+  }
+  .banner{
+    height: 150px;
+    width: 100%;
+    }
+    .containt-h-set{
+      vertical-align: middle;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 10px;
+      margin-top: 3%;
+    }
+}
+@media (max-width:375px) and (min-width:321px){
+  .container .card .card-body p {
+    font-size: 13px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 220px;
+  }
+  .product-dis{
+    color: white;
+    padding-top: 0%;
+    font-size: 11px;
+    padding-left:12%;
+  }
+  .carousel-caption{
+    font-size: 13px;
+  }
+  .carousel-caption h5{
+    font-size: 18px;
+  }
+  .heading-of-product h2{
+    font-size: 25px;
+  }
+}
+@media (max-width:425px) and (min-width:376px){
+  .container .card .card-body p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 200px;
+  }
+  .product-dis{
+    color: white;
+    padding-top: 0%;
+    font-size: 13px;
+    padding-left: 11%;
+  }
+  .carousel-caption{
+    font-size: 15px;
+  }
+  .carousel-caption h5{
+    font-size: 20px;
+  }
+  .heading-of-product h2{
+    font-size: 25px;
+  }
+}
+@media (max-width:768px) and (min-width:426px){
+  .container .card .card-body p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 390px;
+  }
+  .banner{
+    height: 200px;
+    width: 100%;
+    }
+    .product-dis{
+      color: white;
+      padding-top: 13%;
+      font-size: 13px;
+      padding-left: 4%;
+    }
+    .containt-h-set{
+      vertical-align: middle;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 10px;
+      margin-top: 3%;
+    }
+    .carousel-caption{
+      font-size: 24px;
+    }
+    .carousel-caption h5{
+      font-size: 29px;
+    }
+    .heading-of-product h2{
+      font-size: 27px;
+    }
+}
+@media (max-width:1024px) and (min-width:769px){
+  .container .card .card-body p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 300px;
+  }
+  .carousel-caption{
+    font-size: 30px;
+  }
+  .carousel-caption h5{
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container .card .card-body p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .container .card {
+    height: 250px;
+  }
+  .carousel-caption{
+    font-size: 35px;
+  }
+  .carousel-caption h5{
+    font-size: 40px;
+  }
+}
+
+.second-carousel-inner{
+  width:100%!important;
+  margin-left: 0%!important;
+}
+
+.center-carousel{
+  padding-right: 0px!important;
+}
+@media only screen and (min-width: 992px) {
+  .second-carousel-inner{
+    width:100%!important;
+    margin-left: 0%!important;
+    padding-left: 20% !important;
+  }
+}
+
